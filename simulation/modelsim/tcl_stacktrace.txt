@@ -1,0 +1,39 @@
+Wed Aug 23 8:32:41 PM W. Central Africa Standard Time 2023
+Trace back: can't use empty string as operand of "+"
+    while executing
+"expr {[lindex [$win bbox cBegin] 1] + [winfo rooty $win]}"
+    (procedure "Transcript::CmdCompletion" line 43)
+    invoked from within
+"Transcript::CmdCompletion $w [$w get cBegin insert]"
+    (procedure "Transcript::KeyPress" line 24)
+    invoked from within
+"Transcript::KeyPress .main_pane.transcript.interior.cs.body.t {} Alt_L "
+    (command bound to event)
+  <2: ::tkerror {can't use empty string as operand of "+"}
+  <1: ::bgerror {can't use empty string as operand of "+"}
+Wed Aug 23 8:33:14 PM W. Central Africa Standard Time 2023
+Trace back: can't use empty string as operand of "+"
+    while executing
+"expr {[lindex [$win bbox cBegin] 1] + [winfo rooty $win]}"
+    (procedure "Transcript::CmdCompletion" line 43)
+    invoked from within
+"Transcript::CmdCompletion $w [$w get cBegin insert]"
+    (procedure "Transcript::KeyPress" line 24)
+    invoked from within
+"Transcript::KeyPress .main_pane.transcript.interior.cs.body.t {} Alt_L "
+    (command bound to event)
+  <2: ::tkerror {can't use empty string as operand of "+"}
+  <1: ::bgerror {can't use empty string as operand of "+"}
+Wed Aug 23 8:33:44 PM W. Central Africa Standard Time 2023
+Trace back: can't use empty string as operand of "+"
+    while executing
+"expr {[lindex [$win bbox cBegin] 1] + [winfo rooty $win]}"
+    (procedure "Transcript::CmdCompletion" line 43)
+    invoked from within
+"Transcript::CmdCompletion $w [$w get cBegin insert]"
+    (procedure "Transcript::KeyPress" line 24)
+    invoked from within
+"Transcript::KeyPress .main_pane.transcript.interior.cs.body.t {} Alt_L "
+    (command bound to event)
+  <2: ::tkerror {can't use empty string as operand of "+"}
+  <1: ::bgerror {can't use empty string as operand of "+"}

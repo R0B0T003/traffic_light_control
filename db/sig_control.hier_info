@@ -1,0 +1,21 @@
+|sig_control
+hwy[0] <= hwy[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hwy[1] <= hwy[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hwy[2] <= hwy[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crd[0] <= crd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crd[1] <= crd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crd[2] <= crd[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+x => next_state.S1.DATAB
+x => Selector0.IN3
+x => next_state.S4.DATAB
+x => Selector1.IN2
+clock => crd[0]~reg0.CLK
+clock => crd[1]~reg0.CLK
+clock => crd[2]~reg0.CLK
+clock => hwy[0]~reg0.CLK
+clock => hwy[1]~reg0.CLK
+clock => hwy[2]~reg0.CLK
+clock => state~1.DATAIN
+clear => ~NO_FANOUT~
+
+

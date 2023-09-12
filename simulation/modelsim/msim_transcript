@@ -1,0 +1,109 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do sig_control_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:\altera\13.0sp1\modelsim_ase\win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/traffic_control {C:/altera/13.0sp1/quartus/Projects/traffic_control/sig_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sig_control
+# 
+# Top level modules:
+# 	sig_control
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/traffic_control {C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  stimulus
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps stimulus 
+# Loading work.stimulus
+# Loading work.sig_control
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Emmanuel  Hostname: DESKTOP-869RTNQ  ProcessID: 12944
+# 
+#           Attempting to use alternate WLF file "./wlftmbbc74".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftmbbc74
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 1 Main Sig = xxx Country Sig = xxx Car_on_cntry = x, state = xxxx, next_state = xxxx
+#                    1 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = x, state = xxxx, next_state = xxxx
+#                    5 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = xxxx, next_state = xxxx
+#                    5 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = xxxx, next_state = 1000
+#                   10 2 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = xxxx, next_state = 1000
+#                   12 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                   15 3 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 1000
+#                   15 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 0100
+#                   20 4 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 0100
+#                   22 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                   23 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                   25 5 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                   28 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                   29 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                   30 6 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                   34 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                   35 7 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                   35 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                   40 8 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                   45 9 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                   50 10 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0010
+#                   50 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0001
+#                   55 11 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0001
+#                   56 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                   57 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                   62 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                   63 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                   94 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 0100
+#                  100 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  101 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  106 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  107 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  112 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  113 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  114 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0001
+#                  120 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  121 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  126 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                  127 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                  154 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 0100
+#                  160 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  161 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  166 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  167 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  172 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  173 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  174 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0001
+#                  180 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  181 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  186 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                  187 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                  214 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 1000, next_state = 0100
+#                  220 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  221 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0100, next_state = 0000
+#                  226 1 Main Sig = 010 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  227 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0000, next_state = 0010
+#                  232 1 Main Sig = 100 Country Sig = 100 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  233 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 1, state = 0010, next_state = 0010
+#                  234 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0010, next_state = 0001
+#                  240 1 Main Sig = 100 Country Sig = 001 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  241 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 0001, next_state = 1000
+#                  246 1 Main Sig = 100 Country Sig = 010 Car_on_cntry = 0, state = 1000, next_state = 1000
+#                  247 1 Main Sig = 001 Country Sig = 100 Car_on_cntry = 0, state = 1000, next_state = 1000
+# Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v line 80
+# Simulation Breakpoint: Break in Module stimulus at C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v line 80
+# MACRO ./sig_control_run_msim_rtl_verilog.do PAUSED at line 17

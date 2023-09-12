@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\quartus\Projects\traffic_control\simulation\modelsim
+vsig_control
+Im4BI]X0ilDAYZcA;Q_1Il1
+V0O2Vi]B56@IXoEHf]bJQA2
+Z1 dC:\altera\13.0sp1\quartus\Projects\traffic_control\simulation\modelsim
+w1692863915
+8C:/altera/13.0sp1/quartus/Projects/traffic_control/sig_control.v
+FC:/altera/13.0sp1/quartus/Projects/traffic_control/sig_control.v
+L0 158
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 RK1zYm=`:AS3D?@;iU96m3
+!s85 0
+!s108 1692864138.905000
+!s107 C:/altera/13.0sp1/quartus/Projects/traffic_control/sig_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/traffic_control|C:/altera/13.0sp1/quartus/Projects/traffic_control/sig_control.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/Projects/traffic_control -O0
+vstimulus
+!i10b 1
+!s100 nOHXTMA;U7zJVPRbGTKPh2
+I^A5foESdbfKS:b:LFg[J<2
+Vj_kQ[Pef^WSz:;eABMRPQ3
+R1
+w1692864082
+8C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v
+FC:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v
+L0 8
+R2
+r1
+!s85 0
+31
+!s108 1692864139.045000
+!s107 C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/Projects/traffic_control|C:/altera/13.0sp1/quartus/Projects/traffic_control/stimulus.v|
+!s101 -O0
+R3
+R4

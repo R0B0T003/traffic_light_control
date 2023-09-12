@@ -1,0 +1,68 @@
+module sig_control(highway_light, country_light, x, clock, clear);
+
+input x, clock, clear;
+output reg [2:0] country_light, highway_light;
+
+parameter GR = 3'b000, YR = 3'b001, RR = 3'b010, RG = 3'b011, RY = 3'b100;
+reg [2:0] lightcombo_state, next_state;
+
+
+always @(posedge clock, posedge clear)
+begin
+	if (clear) lightcombo_state = GR;
+	else lightcombo_state <= next_state;
+end
+always @(lightcombo_state, x)
+	begin
+		case(lightcombo_state)
+			GR: begin
+					if(x)
+						next_state = YR;
+					else
+						next_state = GR;
+				 end
+			YR: begin
+					repeat (10) @(posedge clock);
+					next_state <= RR;
+				 end
+			RR: begin
+					repeat (10) @(posedge clock);     
+					next_state = RG;
+				 end
+			RG: begin
+					if(x) next_state = RG;
+					else next_state = RY;
+				 end
+			RY: begin
+					repeat (10) @(posedge clock);
+					next_state = GR;
+				 end
+		endcase
+	end
+always @ (lightcombo_state)
+ begin
+	case(lightcombo_state)
+		GR: begin
+				highway_light <= 3'b100;
+				country_light <= 3'b001;
+			 end
+		YR: begin
+				highway_light <= 3'b010;
+				country_light <= 3'b001;
+			 end
+		RR: begin
+				highway_light <= 3'b001;
+				country_light <= 3'b001;
+			 end
+		RG: begin
+				highway_light <= 3'b001;
+				country_light <= 3'b100;
+			 end
+		RY: begin
+				highway_light <= 3'b001;
+				country_light <= 3'b010;
+			 end
+	endcase
+ end
+
+endmodule 
